@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "iiwN2LJgaA6PWjqIX9FriK0rCl4SNF0crRlMHviESHc=",
+  "Source": "API.Bet",
+  "BasePath": "_content/API.Bet",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
