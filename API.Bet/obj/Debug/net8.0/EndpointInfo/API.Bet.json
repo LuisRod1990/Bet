@@ -1,0 +1,80 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API.Bet",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Jugador": {
+      "get": {
+        "tags": [
+          "Jugador"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VMPlayer"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VMPlayer"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/VMPlayer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "VMPlayer": {
+        "type": "object",
+        "properties": {
+          "idIn": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "playerNameVc": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthDateDt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nationalityVc": {
+            "type": "string",
+            "nullable": true
+          },
+          "picturePathVc": {
+            "type": "string",
+            "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
